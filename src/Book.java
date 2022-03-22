@@ -18,6 +18,7 @@ public class Book implements IBook {
 	}
 
 	public Book(float price, String title) {// custom constructor
+		this();
 		this.price = price;
 		this.title = title;
 	}

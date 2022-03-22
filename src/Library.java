@@ -1,11 +1,11 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Library {
 	//composition
-	public List<Book> books = new ArrayList<>();
+	public Map<Integer,Book> books = new HashMap();
 	
-	boolean addBook(Book book) {
-		return books.add(book);
+	void addBook(Book book) {
+		 books.put(book.getId(), book);
 	}
 }

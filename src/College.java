@@ -11,13 +11,13 @@ public class College {
 		
 		//sort the books in ascending order of price
 		System.out.println(library.books);
-		library.books.sort(new Comparator<Book>() {
-
-			@Override
-			public int compare(Book book1, Book book2) {
-				return -((int)book1.getPrice()-(int)book2.getPrice());
-			}
-		});
+//		library.books.sort(new Comparator<Book>() {
+//
+//			@Override
+//			public int compare(Book book1, Book book2) {
+//				return -((int)book1.getPrice()-(int)book2.getPrice());
+//			}
+//		});
 		
 		System.out.println(library.books);
 	}
