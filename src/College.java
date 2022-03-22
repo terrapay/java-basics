@@ -4,6 +4,8 @@ public class College {
 		Library library = new Library();
 		Book book = new Book();
 		library.addBook(book);
-		
+		DigitalBook digitalBook = new DigitalBook(200,"Learn javascript");
+		System.out.println(digitalBook.getTitle());
+		library.addBook(digitalBook);
 	}
 }
