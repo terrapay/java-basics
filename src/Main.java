@@ -4,16 +4,15 @@ public class Main {
 		Book b1 = new Book(400F, "Learn HTML");
 		b1.setPrice(-300F);
 //		b1.title = "Learn Java";
-		
-		
+		System.out.println(b1.getTitle());
 		System.out.println(b1);
 //		new Book(); //only object
 		Book b2;//only ref
 		b2 = new Book();
 		
 //		b2.price = 300F;
-		b2.title = "Learn Java";
-		System.out.println(b2.id);
+//		b2.title = "Learn Java";
+		System.out.println(b2.getId());
 		b2.issue();
 		System.out.println(b2.status);
 		b2.deposit();

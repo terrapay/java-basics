@@ -1,9 +1,13 @@
 
 public class Book {
-	static int counter;
-	int id;
+	private static int counter;
+	private int id;
 
-	String title;
+	private String title;//immutable, read only
+	public String getTitle() {
+		return title;
+	}
+
 	private float price;
 	STATUS status; // issued, available, damaged
 
@@ -40,5 +44,9 @@ public class Book {
 			throw new IllegalArgumentException("Price cannot be negative");
 		}
 		this.price = price;
+	}
+
+	public int getId() {
+		return id;
 	}
 }
