@@ -24,7 +24,11 @@ public class Book implements IBook {
 	}
 
 	public void issue() {
-		this.status = STATUS.issued;
+		if (this.status == STATUS.available) {
+			this.status = STATUS.issued;
+		}else {
+			 throw new IllegalStateException("book is not issueable.");
+		}
 	}
 
 	public void deposit() {
