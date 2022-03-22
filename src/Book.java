@@ -2,8 +2,9 @@
 public class Book {
 	static int counter;
 	int id;
+
 	String title;
-	float price;
+	private float price;
 	STATUS status; // issued, available, damaged
 
 	public Book() {
@@ -29,5 +30,15 @@ public class Book {
 	@Override
 	public String toString() {
 		return this.title + this.status + this.price;
+	}
+	public float getPrice() {
+		return price;
+	}
+	
+	public void setPrice(float price) {
+		if(price<=0) {
+			throw new IllegalArgumentException("Price cannot be negative");
+		}
+		this.price = price;
 	}
 }

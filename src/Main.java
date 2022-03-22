@@ -2,7 +2,7 @@
 public class Main {
 	private static void createBooks() {
 		Book b1 = new Book(400F, "Learn HTML");
-//		b1.price = 300F;
+		b1.setPrice(-300F);
 //		b1.title = "Learn Java";
 		
 		
@@ -11,7 +11,7 @@ public class Main {
 		Book b2;//only ref
 		b2 = new Book();
 		
-		b2.price = 300F;
+//		b2.price = 300F;
 		b2.title = "Learn Java";
 		System.out.println(b2.id);
 		b2.issue();
