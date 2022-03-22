@@ -17,7 +17,7 @@ public class Book implements IBook {
 		this.id = ++counter;
 	}
 
-	public Book(float f, String title) {// custom constructor
+	public Book(float price, String title) {// custom constructor
 		this.price = price;
 		this.title = title;
 	}
